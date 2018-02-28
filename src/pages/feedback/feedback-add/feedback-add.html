@@ -1,0 +1,93 @@
+<ion-header class="head feedback-add">
+
+  <ion-navbar color="footerNav" no-border-bottom>
+    <ion-title class="headTitle">我要反馈</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only class="submit" (click)="submit()">
+        提交
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content id="feedback-add">
+  <ion-list>
+
+    <ion-item class="spc">
+      <ion-label>问题描述</ion-label>
+    </ion-item>
+    <ion-item class="reason">
+      <ion-textarea name="description" class="description" placeholder="例如:家里有事" [(ngModel)]="paramObj.reason"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>任务下发人</ion-label>
+      <ion-select okText="确认" cancelText="取消" [(ngModel)]="paramObj.vacateType">
+        <ion-option *ngFor="let item of items" value="{{item.msg}}">{{item.value}}</ion-option>
+        <ion-option value='123'>asdsadsa</ion-option>
+        <ion-option value='1321321'>asdsadsa</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="part">
+      <ion-label>期望处理时间</ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD" min="2018-01-01" max="2020-10-31" cancelText="取消" doneText="确定" [(ngModel)]="paramObj.startDate"
+        placeholder="请选择"></ion-datetime>
+    </ion-item>
+
+
+
+    <ion-item>
+      <ion-label>问题项目</ion-label>
+      <ion-select okText="确认" cancelText="取消" [(ngModel)]="paramObj.vacateType">
+        <ion-option *ngFor="let item of items" value="{{item.msg}}">{{item.value}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>问题分类</ion-label>
+      <ion-select okText="确认" cancelText="取消" [(ngModel)]="paramObj.vacateType">
+        <ion-option *ngFor="let item of items" value="{{item.msg}}">{{item.value}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>优先级</ion-label>
+      <ion-select okText="确认" cancelText="取消" [(ngModel)]="paramObj.vacateType">
+        <ion-option *ngFor="let item of items" value="{{item.msg}}">{{item.value}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="part">
+      <ion-label>问题维度</ion-label>
+      <ion-select okText="确认" cancelText="取消" [(ngModel)]="paramObj.vacateType">
+        <ion-option *ngFor="let item of items" value="{{item.msg}}">{{item.value}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>受理部门</ion-label>
+      <ion-select okText="确认" cancelText="取消" [(ngModel)]="paramObj.vacateType">
+        <ion-option *ngFor="let item of items" value="{{item.msg}}">{{item.value}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>受理模块</ion-label>
+      <ion-select okText="确认" cancelText="取消" [(ngModel)]="paramObj.vacateType">
+        <ion-option *ngFor="let item of items" value="{{item.msg}}">{{item.value}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>受理人</ion-label>
+      <ion-select okText="确认" cancelText="取消" [(ngModel)]="paramObj.vacateType">
+        <ion-option *ngFor="let item of items" value="{{item.msg}}">{{item.value}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

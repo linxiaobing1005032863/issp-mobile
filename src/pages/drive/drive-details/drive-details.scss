@@ -1,0 +1,140 @@
+page-drive-details {
+  .driveDet-title {
+    .toolbar-title {
+      margin-left: 60px;
+    }
+    .apply {
+      font-size: 16px;
+      color: #fffefe;
+    }
+  }
+  #driveDet {
+    background: #f4f4f4;
+    ion-item {
+      margin-bottom: 10px;
+    }
+    .driveDet-top {
+      .card-md {
+        margin: 0;
+        margin-top: 5px;
+        width: 100%;
+        box-shadow: none;
+        .card-header {
+          padding: 0;
+          ion-avatar {
+            img {
+              width: 60px;
+              height: 60px;
+            }
+          }
+          .item-inner {
+            h2 {
+              margin-bottom: 8px;
+              font-size: 17px;
+              color: #333;
+              span {
+                font-size: 14px;
+                color: #999;
+                margin-left: 5px;
+              }
+            }
+            p {
+              font-size: 13px;
+              color: #999;
+            }
+            .now-status {
+              font-size: 13px;
+              color: #ffad0e;
+            }
+          }
+        }
+        .card-content {
+          padding: 5px 18px;
+          p {
+            color: rgb(51, 51, 51);
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .info {
+      margin-top: 10px;
+      .detail {
+        margin: 20px 0px;
+        display: flex;
+        :first-child {
+          display: inline-block;
+          flex: 0 0 40%;
+          font-size: 14px;
+          color: #999;
+          vertical-align: top;
+        }
+        :last-child {
+          color: #333;
+          font-size: 16px;
+          white-space: normal;
+        }
+        &:first-child {
+          margin-top: 5px;
+        }
+        &:last-child {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .upload {
+      display: flex;
+      flex-wrap: wrap; //   padding: 0 10px;
+      p {
+        flex: 0 0 14%;
+      }
+      div {
+        display: flex;
+        flex: 0 0 86%;
+        flex-wrap: wrap;
+      }
+      img {
+        width: 44%;
+        height: 130px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+#driveDet-footer {
+  .title-md {
+    display: flex;
+  }
+  .toolbar-md {
+    min-height: 49px;
+  }
+  .toolbar-title {
+    font-size: 17px;
+    color: #38c0ff;
+    text-align: center;
+  }
+  .row {
+    min-height: 49px;
+    .col {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      &:first-child {
+        border-right: 1px solid #f4f4f4;
+      }
+      .icon {
+        font-size: 25px;
+        margin-right: 5px;
+      }
+      button {
+        margin: 0;
+        height: 100%;
+        color: #333;
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+<ion-header class="head drive-title">
+
+  <ion-navbar color="footerNav" no-border-bottom>
+    <ion-title class="headTitle">全部</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only class="apply" (click)="add()">
+        出车
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content id="drive-list">
+
+  <div id="driveFun">
+    <ion-segment [(ngModel)]="car">
+      <ion-segment-button value="allCar">
+        全部出车
+      </ion-segment-button>
+      <ion-segment-button value="myCar">
+        我录入的出车
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="car" class="drive-item">
+
+    <ion-list *ngSwitchCase="'allCar'">
+
+      <ion-card (click)="details()">
+
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="../../assets/imgs/userImage1.png">
+            </ion-avatar>
+            <h2>张三
+              <span>研发部</span>
+            </h2>
+            <p>2015-12-01</p>
+            <a class="now-status" item-right>撒旦撒</a>
+          </ion-item>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>
+            车牌号码：粤C12345
+          </p>
+          <p>
+            油卡编号：11-15
+          </p>
+        </ion-card-content>
+
+      </ion-card>
+
+      <ion-card (click)="details()">
+
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="../../assets/imgs/userImage1.png">
+            </ion-avatar>
+            <h2>张三
+              <span>研发部</span>
+            </h2>
+            <p>2015-12-01</p>
+            <a class="now-status" item-right>撒旦撒</a>
+          </ion-item>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>
+            车牌号码：粤C12345
+          </p>
+          <p>
+            油卡编号：11-15
+          </p>
+        </ion-card-content>
+
+      </ion-card>
+
+
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'myCar'">
+
+      <ion-card (click)="details()">
+
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="../../assets/imgs/userImage1.png">
+            </ion-avatar>
+            <h2>张三
+              <span>研发部</span>
+            </h2>
+            <p>2015-12-01</p>
+            <a class="now-status" item-right>撒旦撒</a>
+          </ion-item>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>
+            车牌号码：粤C12345
+          </p>
+          <p>
+            油卡编号：11-15
+          </p>
+        </ion-card-content>
+
+      </ion-card>
+
+    </ion-list>
+
+  </div>
+
+</ion-content>

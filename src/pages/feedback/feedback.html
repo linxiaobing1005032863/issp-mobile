@@ -1,0 +1,219 @@
+<ion-header class="head feedback-title">
+
+  <ion-navbar color="footerNav" no-border-bottom>
+    <ion-title class="headTitle">反馈管理</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only class="apply" (click)="add()">
+        反馈
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content id="feedback-list">
+
+  <div id="feedbackFun">
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="myfeedback">
+        我的反馈
+      </ion-segment-button>
+      <ion-segment-button value="receive">
+        收到的反馈
+      </ion-segment-button>
+      <ion-segment-button value="allfeedback">
+        全部反馈
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="pet" class="feedback-item">
+
+    <ion-list *ngSwitchCase="'myfeedback'">
+      <ion-card (click)="details()">
+
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="../../assets/imgs/userImage1.png">
+            </ion-avatar>
+            <h2>张三
+              <span>研发部</span>
+            </h2>
+            <p>2015-12-01</p>
+            <a class="now-status" item-right>撒旦撒</a>
+          </ion-item>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p class="type">
+            首先我们做爬虫，拿到手第一个步骤都是要先获取到网站的当前页的所有内容，即HTML标签。所以我们先要写一个获取到网页HTML标签的方法。
+          </p>
+          <div class="time">
+            <p>
+              受理人：2015-11-11
+            </p>
+            <p>
+              期待处理时间：2015-11-15
+            </p>
+          </div>
+        </ion-card-content>
+
+      </ion-card>
+
+      <ion-card (click)="details()">
+
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="../../assets/imgs/userImage1.png">
+            </ion-avatar>
+            <h2>张三
+              <span>研发部</span>
+            </h2>
+            <p>2015-12-01</p>
+            <a class="now-status" item-right>撒旦撒</a>
+          </ion-item>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p class="type">
+            首先我们做爬虫，拿到手第一个步骤都是要先获取到网站的当前页的所有内容，即HTML标签。所以我们先要写一个获取到网页HTML标签的方法。
+          </p>
+          <div class="time">
+            <p>
+              受理人：2015-11-11
+            </p>
+            <p>
+              期待处理时间：2015-11-15
+            </p>
+          </div>
+        </ion-card-content>
+
+      </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'receive'">
+      <ion-card (click)="detailAfl(check.aduitStatus,check.id)">
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="../../assets/imgs/userImage1.png">
+            </ion-avatar>
+            <h2>张三
+              <span>研发部</span>
+            </h2>
+            <p>2015-12-01</p>
+            <a class="now-status" item-right>撒旦撒</a>
+          </ion-item>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p class="type">
+            首先我们做爬虫，拿到手第一个步骤都是要先获取到网站的当前页的所有内容，即HTML标签。所以我们先要写一个获取到网页HTML标签的方法。
+          </p>
+          <div class="time">
+            <p>
+              受理人：2015-11-11
+            </p>
+            <p>
+              期待处理时间：2015-11-15
+            </p>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'allfeedback'">
+      <ion-card (click)="detailAfl(check.aduitStatus,check.id)">
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="../../assets/imgs/userImage1.png">
+            </ion-avatar>
+            <h2>张三
+              <span>研发部</span>
+            </h2>
+            <p>2015-12-01</p>
+            <a class="now-status" item-right>撒旦撒</a>
+          </ion-item>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p class="type">
+            首先我们做爬虫，拿到手第一个步骤都是要先获取到网站的当前页的所有内容，即HTML标签。所以我们先要写一个获取到网页HTML标签的方法。
+          </p>
+          <div class="time">
+            <p>
+              受理人：2015-11-11
+            </p>
+            <p>
+              期待处理时间：2015-11-15
+            </p>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card (click)="detailAfl(check.aduitStatus,check.id)">
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="../../assets/imgs/userImage1.png">
+            </ion-avatar>
+            <h2>张三
+              <span>研发部</span>
+            </h2>
+            <p>2015-12-01</p>
+            <a class="now-status" item-right>撒旦撒</a>
+          </ion-item>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p class="type">
+            我们先要写一个获取到网页HTML标签的方法。
+          </p>
+          <div class="time">
+            <p>
+              受理人：2015-11-11
+            </p>
+            <p>
+              期待处理时间：2015-11-15
+            </p>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card (click)="detailAfl(check.aduitStatus,check.id)">
+        <ion-card-header>
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="../../assets/imgs/userImage1.png">
+            </ion-avatar>
+            <h2>张三
+              <span>研发部</span>
+            </h2>
+            <p>2015-12-01</p>
+            <a class="now-status" item-right>撒旦撒</a>
+          </ion-item>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p class="type">
+            首先我们做爬虫，拿到手第一个步骤都是要先获取到网站的当前页的所有内容，即HTML标签。
+          </p>
+          <div class="time">
+            <p>
+              受理人：2015-11-11
+            </p>
+            <p>
+              期待处理时间：2015-11-15
+            </p>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+
+  </div>
+
+</ion-content>

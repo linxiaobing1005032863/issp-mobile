@@ -1,0 +1,36 @@
+page-feedback-add {
+  .feedback-add {
+    .toolbar-title {
+      text-align: center;
+    }
+    .submit {
+      font-size: 16px;
+      color: #fffefe;
+      margin: 0;
+    }
+  }
+  #feedback-add {
+    background: #f4f4f4;
+    .spc {
+      .item-inner {
+        border: 0;
+      }
+    }
+    textarea {
+      margin: 0;
+      height: 50px;
+    }
+    .part {
+      margin-bottom: 10px;
+      .item-inner {
+        border: 0;
+      }
+    }
+    .item {
+      .label {
+        font-size: 16px;
+        color: #333;
+      }
+    }
+  }
+}

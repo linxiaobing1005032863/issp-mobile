@@ -1,0 +1,79 @@
+page-feedback {
+  .feedback-title {
+    .toolbar-title {
+      text-align: center;
+    }
+    .apply {
+      font-size: 16px;
+      color: #fffefe;
+    }
+  }
+  #feedback-list {
+    background: #f4f4f4;
+    #feedbackFun {
+      background: #fff;
+      ion-segment-button {
+        font-size: 16px;
+        color: #38c0ff;
+        &.segment-activated {
+          border-bottom: 4px solid #38c0ff;
+        }
+      }
+    }
+    .feedback-item {
+      .card-md {
+        margin: 0;
+        margin-top: 5px;
+        width: 100%;
+        box-shadow: none;
+        .card-header {
+          padding: 0;
+          ion-avatar {
+            img {
+              width: 60px;
+              height: 60px;
+            }
+          }
+          .item-inner {
+            h2 {
+              margin-bottom: 8px;
+              font-size: 17px;
+              color: #333;
+              span {
+                font-size: 14px;
+                color: #999;
+                margin-left: 5px;
+              }
+            }
+            p {
+              font-size: 13px;
+              color: #999;
+            } 
+            .now-status {
+              font-size: 13px;
+              color: #ffad0e;
+            }
+          }
+        }
+        .card-content {
+          padding: 0 18px;
+          .type {
+            padding-bottom: 10px;
+            padding-top: 5px;
+            border-bottom: 1px solid #f4f4f4;
+            color: #333;
+            font-size: 15px;
+          }
+          .time {
+            padding: 10px 0;
+            p {
+              color: #999;
+              font-size: 13px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

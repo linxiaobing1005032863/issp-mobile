@@ -1,0 +1,126 @@
+page-drive-add {
+  .drive-add {
+    .toolbar-title {
+      text-align: center;
+    }
+    .submit {
+      font-size: 16px;
+      color: #fffefe;
+      margin: 0;
+    }
+  }
+  #drive-add {
+    background: #f4f4f4;
+    ion-input {
+      input {
+        text-align: right;
+      }
+    }
+    .spc {
+      .item-inner {
+        border: 0;
+      }
+    }
+    .part {
+      margin-bottom: 10px;
+      .item-inner {
+        border: 0;
+      }
+    }
+    .upPart {
+      .item-inner {
+        border: 0;
+      }
+    }
+    .item {
+      .label {
+        font-size: 16px;
+        color: #333;
+      }
+    }
+    .upload {
+      display: flex;
+      flex-wrap: wrap;
+      background: #FFF;
+      padding: 0 15px;
+      border-bottom: 1px solid #f4f4f4;
+      .image {
+        flex: 0 0 45%;
+        position: relative;
+        margin-left: 10px;
+        padding-bottom: 15px;
+        i {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    .fillInlist {
+      margin-top: 0;
+      margin-bottom: 10px;
+      .item-block {
+        font-size: 15px;
+        padding-left: 14px;
+        color: #333;
+        &:last-child {
+          border: 0;
+        }
+        .item-inner {
+          border-color: #f4f4f4;
+        }
+      }
+      .sm-headline {
+        font-size: 17px;
+        border: 1px solid #f4f4f4 !important;
+        .sm-icon {
+          font-size: 20px;
+          margin-right: 5px;
+        }
+      }
+      textarea {
+        margin: 0;
+        height: 50px;
+      }
+      .row {
+        background: #fff;
+        border-bottom: 1px solid #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .list-ios>.item-block:first-child,
+        .list-md>.item-block:first-child {
+          border: 0;
+        }
+        .item-ios.item-block,
+        .item-md.item-block {
+          border: 0;
+          .item-inner {
+            border: 0;
+          }
+        }
+        .col {
+          padding-left: 0;
+        }
+      }
+      .choose {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        .radio {
+          margin: 0;
+        }
+        .item-radio {
+          padding: 0;
+        }
+        .item-block {
+          flex: 0 0 40%
+        }
+      }
+    }
+  }
+}

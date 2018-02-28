@@ -1,0 +1,21 @@
+<ion-header class="head deal-top">
+
+  <ion-navbar color="footerNav" no-border-bottom>
+    <ion-title class="headTitle">手动审核</ion-title>
+    <ion-buttons end>
+      <button ion-button class="submit" (click)="confirm()">确认</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content id="deal-bottom">
+  <my-radio buttonColor='#limegreen' title="是否通过" option1='是' option2='否'>
+  </my-radio>
+  <ion-item class="marginTop-10">
+    审核原因
+    <br>
+    <textarea  placeholder="请输入原因" class="expl"></textarea>
+  </ion-item>
+</ion-content>
